@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.main-content {
+  margin-left: 200px;
+  padding: 2rem;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-item {
+  background: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  width: 300px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.intro{
+  text-align: center;
+  margin-top: 5%;
+}

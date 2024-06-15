@@ -1,0 +1,51 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 160px;
+    background-color: #DDD0C8;
+    color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+
+  .sidebar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .sidebar nav {
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sidebar nav ul li {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .sidebar nav ul li a {
+    color: #323232;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+
+  .sidebar nav ul li a:hover {
+    border-radius: 70px;
+    background-color: #575757;
+  }
+
+ 
+
+
