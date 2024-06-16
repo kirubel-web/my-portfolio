@@ -1,8 +1,24 @@
+body.light {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #007BFF;
+  --link-hover-color: #0056b3;
+}
+
+
+body.dark {
+  --background-color: #333333;
+  --text-color: #ffffff;
+  --link-color: #1E90FF;
+  --link-hover-color: #1C6DD0;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: var(--background-color);
 }
 
 .main-content {
@@ -22,7 +38,8 @@ section {
 }
 
 .project-item {
-  background: #fff;
+  background: var(--background-color);
+  color: var(--text-color);
   margin: 1rem;
   padding: 1rem;
   border: 1px solid #ddd;

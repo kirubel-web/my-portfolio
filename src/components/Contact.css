@@ -1,0 +1,38 @@
+#contact {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+    color: #333;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .icon:hover {
+    color: #007BFF;
+    transform: scale(1.1);
+  }
+
+  .icon.instagram:hover {
+    color: #E1306C;
+  }
+
+  .icon.telegram:hover {
+    color: #0088cc;
+  }
+
+  .icon.github:hover {
+    color: #000000;
+  }
+
+  .icon.linkedin:hover {
+    color: #0077B5;
+  }

@@ -5,37 +5,37 @@ const projects = [
   {
     title: 'Project 1',
     description: 'Description of project 1.',
-    image: '/public/images/project.jpg',
+    image: '/images/project.jpg',
     tags: ['React', 'JavaScript', 'CSS']
   },
   {
     title: 'Project 2',
     description: 'Description of project 2.',
-    image: '/public/images/project.jpg',
+    image: '/images/project.jpg',
     tags: ['Node.js', 'Express', 'MongoDB']
   },
   {
     title: 'Project 3',
     description: 'Description of project 2.',
-    image: '/public/images/project.jpg',
+    image: '/images/project.jpg',
     tags: ['Node.js', 'Express', 'MongoDB']
   },
   {
     title: 'Project 4',
     description: 'Description of project 1.',
-    image: '/public/images/project.jpg',
+    image: '/images/project.jpg',
     tags: ['React', 'JavaScript', 'CSS']
   },
   {
     title: 'Project 5',
     description: 'Description of project 2.',
-    image: '/public/images/project.jpg',
+    image: '/images/project.jpg',
     tags: ['Node.js', 'Express', 'MongoDB']
   },
   {
     title: 'Project 6',
     description: 'Description of project 2.',
-    image: '/public/images/project.jpg',
+    image: '/images/project.jpg',
     tags: ['Node.js', 'Express', 'MongoDB']
   },
 

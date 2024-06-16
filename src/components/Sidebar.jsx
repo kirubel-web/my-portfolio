@@ -1,14 +1,16 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faProjectDiagram, faEnvelope, faIndustry } from '@fortawesome/free-solid-svg-icons'
+import React, { useContext } from 'react'; 
 import '../index.css'
 import './Sidebar.css';
+import { ThemeContext } from '../ThemeContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faProjectDiagram, faEnvelope, faIndustry } from '@fortawesome/free-solid-svg-icons'
+
 
 
 const Sidebar = () => {
 
 
-
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <div className="sidebar">
@@ -21,6 +23,9 @@ const Sidebar = () => {
           <li><a href="#contact"><FontAwesomeIcon icon={faEnvelope} /> Contact</a></li>
         </ul>
       </nav>
+      <button onClick={toggleTheme}>
+        Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
+      </button>
     </div>
   );
 };
