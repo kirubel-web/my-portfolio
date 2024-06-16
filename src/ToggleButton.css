@@ -1,0 +1,47 @@
+/* Container for the toggle */
+.toggle-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  /* Hide the default checkbox */
+  .toggle-checkbox {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  /* Style the label to look like a slider */
+  .toggle-label {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  /* Ball inside the slider */
+  .toggle-ball {
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Change the background color of the slider when checked */
+  .toggle-checkbox:checked + .toggle-label {
+    background-color: #007BFF;
+  }
+
+  /* Move the ball to the right when checked */
+  .toggle-checkbox:checked + .toggle-label .toggle-ball {
+    transform: translateX(30px);
+  }

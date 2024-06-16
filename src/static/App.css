@@ -1,8 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
 body.light {
   --background-color: #ffffff;
   --text-color: #000000;
   --link-color: #007BFF;
   --link-hover-color: #0056b3;
+  --color: #333;
 }
 
 
@@ -11,6 +15,8 @@ body.dark {
   --text-color: #ffffff;
   --link-color: #1E90FF;
   --link-hover-color: #1C6DD0;
+  --color: hsl(0, 0%, 89%);
+
 }
 
 
@@ -19,7 +25,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
+  color: var(--text-color)
 }
+
 
 .main-content {
   margin-left: 200px;
@@ -58,4 +66,9 @@ footer {
 .intro{
   text-align: center;
   margin-top: 5%;
+  font-family: "Playwrite GB S" !important;
+}
+
+.icon {
+  color: var(--color);
 }

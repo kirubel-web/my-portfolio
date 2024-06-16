@@ -1,7 +1,8 @@
-import React, { useContext } from 'react'; 
+import React, { useContext } from 'react';
 import '../index.css'
 import './Sidebar.css';
 import { ThemeContext } from '../ThemeContext';
+import ToggleButton from '../ToggleButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faProjectDiagram, faEnvelope, faIndustry } from '@fortawesome/free-solid-svg-icons'
 
@@ -23,9 +24,7 @@ const Sidebar = () => {
           <li><a href="#contact"><FontAwesomeIcon icon={faEnvelope} /> Contact</a></li>
         </ul>
       </nav>
-      <button onClick={toggleTheme}>
-        Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
-      </button>
+      <ToggleButton />
     </div>
   );
 };
