@@ -13,8 +13,10 @@ const Sidebar = () => {
 
   const { theme, toggleTheme } = useContext(ThemeContext);
 
+
   return (
-    <div className="sidebar">
+    <div className='sidebar'>
+
       <h1><FontAwesomeIcon icon={faIndustry} />Kirubel</h1>
 
       <nav>

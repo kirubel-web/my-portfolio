@@ -4,7 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 12rem;
+    margin-bottom: 2%;
   }
 
   /* Hide the default checkbox */

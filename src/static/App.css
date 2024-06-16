@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 body.light {
   --background-color: #ffffff;
@@ -7,6 +8,8 @@ body.light {
   --link-color: #007BFF;
   --link-hover-color: #0056b3;
   --color: #333;
+  --sidebar-color: #f7f3f0;
+  --sidebar-text-color: #323232;
 }
 
 
@@ -16,6 +19,9 @@ body.dark {
   --link-color: #1E90FF;
   --link-hover-color: #1C6DD0;
   --color: hsl(0, 0%, 89%);
+  --sidebar-color: #6b6b6b;
+  --sidebar-text-color: #fafafa;
+
 
 }
 
@@ -32,6 +38,19 @@ body {
 .main-content {
   margin-left: 200px;
   padding: 2rem;
+  transition: margin-left 0.3s ease;
+}
+
+
+@media (max-width: 480px) {
+  .main-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
+
+#about{
+  margin-top: 50px;
 }
 
 section {
@@ -66,9 +85,18 @@ footer {
 .intro{
   text-align: center;
   margin-top: 5%;
-  font-family: "Playwrite GB S" !important;
+  font-family: "Rubik" !important;
 }
 
 .icon {
   color: var(--color);
+}
+
+.sidebar {
+  background-color: var(--sidebar-color);
+  color: var(--sidebar-text-color);
+}
+
+.sidebar nav ul li a{
+  color: var(--sidebar-text-color);
 }

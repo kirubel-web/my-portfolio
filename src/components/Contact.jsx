@@ -11,13 +11,13 @@ const Contact = () => {
         <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} className="icon instagram" />
         </a>
-        <a href="https://t.me/yourprofile" target="_blank" rel="noopener noreferrer">
+        <a href="https://t.me/kiru_bel8" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTelegram} className="icon telegram" />
         </a>
         <a href="https://github.com/kirubel-web" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} className="icon github" />
         </a>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/kirubel-alemu-82989b227" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} className="icon linkedin" />
         </a>
       </div>
