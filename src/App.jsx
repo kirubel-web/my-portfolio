@@ -17,6 +17,7 @@ function App() {
     <ThemeProvider>
       <div className="App">
 
+
         <Sidebar />
         <div className="main-content">
           <h1 className='intro'>Hey there 👋 I'm Kirubel</h1>

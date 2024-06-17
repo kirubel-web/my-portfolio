@@ -3,40 +3,51 @@ import './Projects.css';
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description of project 1.',
-    image: '/images/project.jpg',
-    tags: ['React', 'JavaScript', 'CSS']
+    title: 'Student Management System',
+    description: 'Java App allows users to manage student information, including adding, updating, deleting, and searching student records. ',
+    image: '/images/dashboard.png',
+    tags: ['Java', 'JavaFX', 'SceneBuilder'],
+    link: 'https://github.com/kirubel-web/Student_Managment'
   },
   {
-    title: 'Project 2',
-    description: 'Description of project 2.',
-    image: '/images/project.jpg',
-    tags: ['Node.js', 'Express', 'MongoDB']
+    title: 'Yegna Bus Booking system',
+    description: 'An online booking system, A web solution that allows potential guests to self-book and pay through the website,',
+    image: '/images/yegna.png',
+    tags: ['HTML5', 'CSS', 'PHP'],
+    link: 'https://github.com/kirubel-web/Yegana-Frontend'
+
   },
   {
     title: 'Project 3',
     description: 'Description of project 2.',
     image: '/images/project.jpg',
-    tags: ['Node.js', 'Express', 'MongoDB']
+    tags: ['Node.js', 'Express', 'MongoDB'],
+    link: 'github.com'
+
   },
   {
     title: 'Project 4',
     description: 'Description of project 1.',
     image: '/images/project.jpg',
-    tags: ['React', 'JavaScript', 'CSS']
+    tags: ['Java', 'JavaFX', 'SceneBuilder'],
+    link: 'github.com'
+
   },
   {
     title: 'Project 5',
     description: 'Description of project 2.',
     image: '/images/project.jpg',
-    tags: ['Node.js', 'Express', 'MongoDB']
+    tags: ['Node.js', 'Express', 'MongoDB'],
+    link: 'github.com'
+
   },
   {
     title: 'Project 6',
     description: 'Description of project 2.',
     image: '/images/project.jpg',
-    tags: ['Node.js', 'Express', 'MongoDB']
+    tags: ['Node.js', 'Express', 'MongoDB'],
+    link: 'github.com'
+
   },
 
 
@@ -58,6 +69,10 @@ const Projects = () => {
                   <span className="tag" key={index}>{tag}</span>
                 ))}
               </div>
+              <div className='button-link'>
+              <a href={project.link} target="_blank"> <button> Visit</button> </a>
+              </div>
+
             </div>
           </div>
         ))}

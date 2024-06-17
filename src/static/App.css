@@ -5,21 +5,21 @@
 body.light {
   --background-color: #ffffff;
   --text-color: #000000;
-  --link-color: #007BFF;
-  --link-hover-color: #0056b3;
+  --link-color: #cbdcf09a;
+  --link-hover-color: hsla(32, 52%, 80%, 0.664);
   --color: #333;
-  --sidebar-color: #f7f3f0;
+  --sidebar-color: #e2dbd5;
   --sidebar-text-color: #323232;
 }
 
 
 body.dark {
-  --background-color: #333333;
+  --background-color: #202020;
   --text-color: #ffffff;
   --link-color: #1E90FF;
-  --link-hover-color: #1C6DD0;
+  --link-hover-color: #85909e77;
   --color: hsl(0, 0%, 89%);
-  --sidebar-color: #6b6b6b;
+  --sidebar-color: #3b3b3b;
   --sidebar-text-color: #fafafa;
 
 
@@ -40,6 +40,7 @@ body {
   padding: 2rem;
   transition: margin-left 0.3s ease;
 }
+
 
 
 @media (max-width: 480px) {
@@ -99,4 +100,8 @@ footer {
 
 .sidebar nav ul li a{
   color: var(--sidebar-text-color);
+}
+.sidebar nav ul li a:hover {
+  border-radius: 70px;
+  background-color: var(--link-hover-color);
 }
