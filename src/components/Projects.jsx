@@ -18,11 +18,11 @@ const projects = [
 
   },
   {
-    title: 'Project 3',
-    description: 'Description of project 2.',
-    image: '/images/project.jpg',
-    tags: ['Node.js', 'Express', 'MongoDB'],
-    link: 'github.com'
+    title: 'Audible Bestsellers Scraper',
+    description: 'This Python script is designed to scrapebook titles, authors, and lengths and saves the data to a CSV file',
+    image: '/images/audible.png',
+    tags: ['Python', 'Selenium', 'Pandas'],
+    link: 'https://github.com/kirubel-web/audible-scraper'
 
   },
   {
@@ -34,19 +34,19 @@ const projects = [
 
   },
   {
-    title: 'Project 5',
-    description: 'Description of project 2.',
-    image: '/images/project.jpg',
-    tags: ['Node.js', 'Express', 'MongoDB'],
-    link: 'github.com'
+    title: 'Calculator',
+    description: 'A simple Django web app. Which i used to understand Django Framework.',
+    image: '/images/calculator.png',
+    tags: ['Python', 'Django'],
+    link: 'https://github.com/kirubel-web/calculator-django'
 
   },
   {
-    title: 'Project 6',
-    description: 'Description of project 2.',
-    image: '/images/project.jpg',
-    tags: ['Node.js', 'Express', 'MongoDB'],
-    link: 'github.com'
+    title: 'Guess My Number',
+    description: 'A simple javascript game. Which i used to understand DOM manipulation.',
+    image: '/images/guess.png',
+    tags: ['Javascript', 'HTML5', 'CSS'],
+    link: 'https://github.com/kirubel-web/Guess_my_num'
 
   },
 

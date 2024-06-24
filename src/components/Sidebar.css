@@ -52,6 +52,7 @@
   margin: 0.5rem 0;
   margin-left: 9;
 
+
 }
 
 .sidebar nav ul li a {
@@ -59,6 +60,8 @@
   display: block;
   padding: 0.5rem 0;
   width: 100%;
+  padding: 0.5rem;
+
 }
 
 
@@ -69,16 +72,17 @@
     height: 30px;
     left: 0%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-    padding: 1.5rem;
+    padding-left: 0 rem;
+
     margin-bottom: auto;
     margin-right: auto;
     margin-top: 0px;
 
   }
   .main-content {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -100,21 +104,17 @@
   }
 
   .sidebar nav ul li {
+
     margin: 0 1rem;
+
+
   }
 
   .sidebar nav ul li a {
     padding: 0.5rem;
   }
 
-  .toggle-container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 12rem;
-    margin-bottom: 2%;
-  }
+
 
   #projects{
     padding: 1%;
@@ -122,5 +122,10 @@
 
   .project-list{
   padding: auto;
+
+  }
+
+  .sidebar h1{
+    display:none;
   }
 }
