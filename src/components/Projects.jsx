@@ -26,11 +26,35 @@ const projects = [
 
   },
   {
-    title: 'Project 4',
-    description: 'Description of project 1.',
-    image: '/images/project.jpg',
-    tags: ['Java', 'JavaFX', 'SceneBuilder'],
-    link: 'github.com'
+    title: 'Movie Transcript Scraper',
+    description: 'This Python script is designed to scrape movie transcripts from a website. It extracts links to movie scripts from the main page and saves individual scripts to text files',
+    image: '/images/movietranscript.png',
+    tags: ['Python','Beautifulsoup'],
+    link: 'https://github.com/kirubel-web/ScriptMiner'
+
+  },
+  {
+    title: 'Space News',
+    description: 'A React app, which uses space news api to fetch data and display most trending space related news.',
+    image: '/images/spacenews.png',
+    tags: ['REACT','Javascript' ,'HTML5'],
+    link: 'https://github.com/kirubel-web/Space-News-React'
+
+  },
+  {
+    title: 'Dice Game',
+    description: 'A simple javascript dice game. Which i used to understand DOM manipulation..',
+    image: '/images/dice.png',
+    tags: ['Javascript', 'HTML5', 'css'],
+    link: 'https://github.com/kirubel-web/Dice_Game'
+
+  },
+  {
+    title: 'Blog API',
+    description: 'A Django Blog API App implementing Rest Framework. Which generates API endpoints for CRUD operations.',
+    image: '/images/blog.png',
+    tags: ['Python', 'Django', 'Django Rest Framework'],
+    link: 'https://github.com/kirubel-web/blogapi'
 
   },
   {

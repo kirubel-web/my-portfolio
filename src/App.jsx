@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './static/App.css';
 
+
 import { ThemeProvider } from './ThemeContext';
 import Sidebar from './components/Sidebar';
 import About from './components/About'
@@ -14,16 +15,16 @@ import Contact from './components/Contact';
 
 
 
-
 function App() {
 
   return (
 
 
 
+
+
     <ThemeProvider>
       <div className="App">
-
 
         <Sidebar />
         <div className="main-content">
@@ -35,9 +36,9 @@ function App() {
 
         </div>
 
-
-      </div>
+        </div>
     </ThemeProvider>
+
 
   );
 }
