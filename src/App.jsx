@@ -24,9 +24,10 @@ function App() {
 
 
     <ThemeProvider>
+      <Sidebar />
       <div className="App">
 
-        <Sidebar />
+
 
 
           <Routes>

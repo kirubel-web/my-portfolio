@@ -79,9 +79,11 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="main-content">
     <section id="projects">
-      <h2>My Projects</h2>
+
+
+<h2>My Projects</h2>
+
       <div className="project-list">
         {projects.map((project, index) => (
           <div className="project-item" key={index}>
@@ -103,8 +105,9 @@ const Projects = () => {
 
         ))}
       </div>
+
     </section>
-    </div>
+
   );
 };
 

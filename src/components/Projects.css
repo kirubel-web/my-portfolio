@@ -3,6 +3,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    padding-left: 12%;
+    padding-right: 2%;
 
   }
 
@@ -63,6 +65,15 @@
 
   .button-link{
     margin-top: 1rem;
+  }
+
+  @media (max-width: 748px) {
+    .project-list {
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+
+
   }
 
 
