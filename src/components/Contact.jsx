@@ -2,6 +2,7 @@ import React from 'react';
 import './Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTelegram, faGithub, faLinkedin, faXTwitter,faMedium,faDev } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeCircleCheck } from '@fortawesome/free-solid-svg-icons/faEnvelopeCircleCheck';
 
 
 
@@ -13,9 +14,7 @@ const Contact = () => {
     <div className="main-content">
     <section id="contact">
       <h2>Contact Me</h2>
-      <div>
-        <p>Email</p>
-      </div>
+
       <div className="contact-icons">
         <a href="https://www.instagram.com/code_japi" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} className="icon instagram" />
@@ -33,11 +32,20 @@ const Contact = () => {
           <FontAwesomeIcon icon={faXTwitter} className="icon linkedin" />
         </a>
         <a href="https://code-japi.medium.com" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faMedium} className="icon linkedin" />
+          <FontAwesomeIcon icon={faMedium} className="icon medium" />
         </a>
         <a href="https://www.dev.to/code_japi" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faDev} className="icon linkedin" />
         </a>
+      </div>
+      <div>
+        <p>Do You Prefer Email Instead:</p>
+        <div className="contact-icons">
+        <a href="mailto:kirubelalemu119@gmail.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faEnvelopeCircleCheck} className="icon email" />
+        </a>
+
+        </div>
       </div>
     </section>
     </div>

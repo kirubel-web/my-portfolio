@@ -38,6 +38,13 @@
   .icon.linkedin:hover {
     color: #0077B5;
   }
+  .icon.email:hover {
+    color: #d43737;
+  }
+
+  .icon.medium:hover {
+    color: #706b6b;
+  }
   @media (max-width: 768px) {
     .contact-icons {
 
