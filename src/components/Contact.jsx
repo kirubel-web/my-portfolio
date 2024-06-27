@@ -10,6 +10,7 @@ import { faInstagram, faTelegram, faGithub, faLinkedin, faXTwitter,faMedium,faDe
 
 const Contact = () => {
   return (
+    <div className="main-content">
     <section id="contact">
       <h2>Contact Me</h2>
       <div>
@@ -39,6 +40,7 @@ const Contact = () => {
         </a>
       </div>
     </section>
+    </div>
   );
 };
 

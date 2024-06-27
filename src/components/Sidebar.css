@@ -75,7 +75,7 @@
     justify-content:center;
     align-items: center;
     padding-left: 0 rem;
-
+    padding-bottom: 15px;
     margin-bottom: auto;
     margin-right: auto;
     margin-top: 0px;
@@ -101,11 +101,13 @@
   .sidebar nav ul {
     display: flex;
     flex-direction: row;
+
   }
 
   .sidebar nav ul li {
 
     margin: 0 1rem;
+
 
 
   }

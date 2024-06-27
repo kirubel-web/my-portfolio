@@ -4,8 +4,8 @@ import './Sidebar.css';
 import { ThemeContext } from '../ThemeContext';
 import ToggleButton from '../ToggleButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faProjectDiagram, faEnvelope, faIndustry } from '@fortawesome/free-solid-svg-icons'
-
+import { faUser, faProjectDiagram, faEnvelope, faIndustry, faHome } from '@fortawesome/free-solid-svg-icons'
+import {NavLink} from 'react-router-dom'
 
 
 const Sidebar = () => {
@@ -21,9 +21,19 @@ const Sidebar = () => {
 
       <nav>
         <ul>
-          <li><a href="#about"><FontAwesomeIcon icon={faUser} /> About</a></li>
-          <li><a href="#projects"><FontAwesomeIcon icon={faProjectDiagram} /> Projects</a></li>
-          <li><a href="#contact"><FontAwesomeIcon icon={faEnvelope} /> Contact</a></li>
+
+        <li><NavLink to="/" exact activeClassName="active"><FontAwesomeIcon icon={faHome} /> Home </NavLink></li>
+
+        <li><NavLink to="/about" exact activeClassName="active"><FontAwesomeIcon icon={faUser} /> About</NavLink></li>
+
+        <li><NavLink to="/projects" exact activeClassName="active"><FontAwesomeIcon icon={faProjectDiagram} /> Projects</NavLink></li>
+
+        <li><NavLink to="/contact" exact activeClassName="active"><FontAwesomeIcon icon={faEnvelope} /> Contact</NavLink></li>
+
+
+
+
+
         </ul>
       </nav>
       <ToggleButton />

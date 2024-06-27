@@ -42,7 +42,7 @@ body {
 
 
 .main-content {
-  margin-left: 200px;
+  margin-left: 80px;
   padding: 2rem;
   transition: margin-left 0.3s ease;
 }
@@ -106,6 +106,7 @@ footer {
 
 .sidebar nav ul li a{
   color: var(--sidebar-text-color);
+  
 }
 .sidebar nav ul li a:hover {
   border-radius: 70px;
