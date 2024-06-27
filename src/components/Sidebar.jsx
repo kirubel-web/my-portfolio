@@ -22,9 +22,9 @@ const Sidebar = () => {
       <nav>
         <ul>
 
-        <li><NavLink to="/" exact activeClassName="active"><FontAwesomeIcon icon={faHome} /> Home </NavLink></li>
+        <li><NavLink to="/" exact activeClassName="active"><FontAwesomeIcon icon={faHome} /> &nbsp; Home  </NavLink></li>
 
-        <li><NavLink to="/about" exact activeClassName="active"><FontAwesomeIcon icon={faUser} /> About</NavLink></li>
+        <li><NavLink to="/about" exact activeClassName="active"><FontAwesomeIcon icon={faUser} />&nbsp;&nbsp;&nbsp;  About </NavLink></li>
 
         <li><NavLink to="/projects" exact activeClassName="active"><FontAwesomeIcon icon={faProjectDiagram} /> Projects</NavLink></li>
 
