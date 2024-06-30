@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('./poppins.css');
 
 html{
   scroll-behavior: smooth;
@@ -32,11 +33,18 @@ body.dark {
 
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   background-color: var(--background-color);
   color: var(--text-color);
+
+}
+h2{
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 
 }
 
@@ -98,7 +106,9 @@ footer {
 .intro{
   text-align: center;
   margin-top: 5%;
-  font-family: "Rubik" !important;
+  font-family: "Poppins" !important;
+  font-weight: 500;
+
 }
 
 .icon {

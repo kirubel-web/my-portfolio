@@ -29,7 +29,7 @@ const projects = [
     title: 'Movie Transcript Scraper',
     description: 'This Python script is designed to scrape movie transcripts from a website. It extracts links to movie scripts from the main page and saves individual scripts to text files',
     image: '/images/movietranscript.png',
-    tags: ['Python','Beautifulsoup'],
+    tags: ['Python', 'Beautifulsoup'],
     link: 'https://github.com/kirubel-web/ScriptMiner'
 
   },
@@ -37,7 +37,7 @@ const projects = [
     title: 'Space News',
     description: 'A React app, which uses space news api to fetch data and display most trending space related news.',
     image: '/images/spacenews.png',
-    tags: ['REACT','Javascript' ,'HTML5'],
+    tags: ['REACT', 'Javascript', 'HTML5'],
     link: 'https://github.com/kirubel-web/Space-News-React'
 
   },
@@ -82,7 +82,7 @@ const Projects = () => {
     <section id="projects">
 
 
-<h2>My Projects</h2>
+      <h2 >My Projects</h2>
 
       <div className="project-list">
         {projects.map((project, index) => (
@@ -97,7 +97,13 @@ const Projects = () => {
                 ))}
               </div>
               <div className='button-link'>
-              <a href={project.link} target="_blank"> <button> Visit</button> </a>
+                <a href={project.link} target="_blank"> <button className='visitbtn'>
+                  Visit
+                  <div class="arrow-wrapper">
+                    <div class="arrow"></div>
+
+                  </div>
+                </button> </a>
               </div>
 
             </div>
