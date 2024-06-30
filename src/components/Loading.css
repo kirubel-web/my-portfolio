@@ -6,6 +6,14 @@
     right: 50%;
   }
 
+  @media (max-width: 748px) {
+    .loader {
+    right: 40%;
+
+    }
+
+  }
+
   .loader__bar {
     position: absolute;
     bottom: 0;
