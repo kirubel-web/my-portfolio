@@ -1,5 +1,7 @@
-import React, {useState} from 'react';
+import Loading from "./components/Loading";
 import './static/App.css';
+import React, {useEffect,useState} from 'react';
+
 
 import Home from './components/Home';
 import { ThemeProvider } from './ThemeContext';
@@ -15,7 +17,15 @@ import { Route, Routes } from 'react-router-dom';
 
 
 
+
 function App() {
+  const [loading, setLoading] = useState(true)
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 3300)
+    }, [])
+    if (loading) {
+        return <Loading/>
+    }
 
   return (
 
