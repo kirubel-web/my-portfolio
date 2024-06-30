@@ -4,7 +4,7 @@ import './Sidebar.css';
 import { ThemeContext } from '../ThemeContext';
 import ToggleButton from '../ToggleButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faProjectDiagram, faEnvelope, faIndustry, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faProjectDiagram, faEnvelope, faHome ,faLink} from '@fortawesome/free-solid-svg-icons'
 import {NavLink} from 'react-router-dom'
 
 
@@ -17,7 +17,12 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
 
-      <h1><FontAwesomeIcon icon={faIndustry} />Kirubel</h1>
+      <NavLink to="/" exact activeClassName="active"><img src={"/images/profile.jpg"} alt="" className='profilepic' /></NavLink>
+
+
+
+
+      <h3><FontAwesomeIcon icon={faLink} />Kirubel</h3>
 
       <nav>
         <ul>
