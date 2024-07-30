@@ -27,10 +27,14 @@ function Home() {
       <div className="App">
 
         <div className="main-content">
-          
+
           <h1 className='intro'>Hey there 👋 I'm Kirubel</h1>
+
+          </div>
           <About/>
           <Projects/>
+        <div className="main-content">
+
           <Contact/>
 
         </div>

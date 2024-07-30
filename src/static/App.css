@@ -68,9 +68,13 @@ h2{
 
 #about{
   margin-top: 5px;
+  margin-left: 120px;
+}
+#about h2{
+  margin-right: 13%;
 }
 #project{
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 section {

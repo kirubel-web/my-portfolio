@@ -27,6 +27,13 @@
     color: var(--color);
     background: var(--bg, var(--background));
     margin-top: 2rem;
+    margin-right: 120px;
+  }
+  @media (max-width: 748px) {
+    .continue-application{
+      margin-right: 0px;
+    }
+
   }
 
   .continue-application > div {
@@ -194,3 +201,12 @@
     --pbd: .15s;
     --pex: -24px;
   }
+@media (max-width: 748px) {
+  #about {
+    margin-left: 0;
+  }
+  #about h2{
+    margin-right: 0;
+  }
+
+}
