@@ -13,6 +13,11 @@
   z-index: 1000;
   border-top-right-radius: 10px;
 }
+@media (max-width: 748) {
+  .sidebar{
+  border-top-left-radius: 10px;
+  }
+}
 
 
 .profilepic{

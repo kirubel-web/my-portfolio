@@ -11,6 +11,7 @@ const About = () => {
             I am a web developer with a passion for learning new things. I enjoy creating web applications and learning new technologies.
 
           </p>
+          <a href={"https://drive.google.com/file/d/1p4XM-SGEjh9XIDEzowgQ3R17ZtTJrdpE/view?usp=sharing"} target="_blank">
           <button class="continue-application">
     <div>
         <div class="pencil"></div>
@@ -25,6 +26,7 @@ const About = () => {
     </div>
     Resume
 </button>
+</a>
         </div>
       </section>
 
