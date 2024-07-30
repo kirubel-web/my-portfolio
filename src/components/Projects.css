@@ -65,7 +65,13 @@
 
   .button-link{
     margin-top: 1rem;
+
+
   }
+  a:link {
+    text-decoration: none;
+  }
+
 
   @media (max-width: 748px) {
     .project-list {
