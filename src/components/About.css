@@ -1,3 +1,9 @@
+.aboutroute{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
 .continue-application {
     --color: #fff;
     --background: #404660de;
@@ -27,7 +33,7 @@
     color: var(--color);
     background: var(--bg, var(--background));
     margin-top: 2rem;
-    margin-right: 120px;
+    margin-right: 50px;
   }
   @media (max-width: 748px) {
     .continue-application{

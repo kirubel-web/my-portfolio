@@ -3,7 +3,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="main-content">
+    <div className="aboutroute">
       <section id="about">
         <div>
           <h2>About Me</h2>
@@ -28,6 +28,7 @@ const About = () => {
 </button>
 </a>
         </div>
+
       </section>
 
 

@@ -16,10 +16,24 @@ body.light {
   --color: #333;
   --sidebar-color: #e2dbd5;
   --sidebar-text-color: #323232;
+
+  background-color:hsla(145,0%,100%,1);
+background-image:
+radial-gradient(at 28% 21%, hsla(540,19%,78%,1) 0px, transparent 50%),
+radial-gradient(at 72% 40%, hsla(3030,83%,78%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(100,40%,83%,1) 0px, transparent 50%),
+radial-gradient(at 99% 94%, hsla(0,7%,76%,1) 0px, transparent 50%),
+radial-gradient(at 100% 0%, hsla(0,19%,76%,1) 0px, transparent 50%),
+radial-gradient(at 69% 64%, hsla(0,4%,73%,1) 0px, transparent 50%),
+radial-gradient(at 95% 90%, hsla(2660,89%,73%,1) 0px, transparent 50%);
+background-size: cover; /* Ensures the background covers the entire area */
+  background-repeat:unset; /* Prevents the background from repeating */
+  background-position: center;
 }
 
 
 body.dark {
+
   --background-color: #202020;
   --text-color: #ffffff;
   --link-color: #1E90FF;
@@ -28,6 +42,19 @@ body.dark {
   --sidebar-color: #3b3b3b;
   --sidebar-text-color: #fafafa;
 
+  background-color:hsla(293,0%,0%,1);
+background-image:
+radial-gradient(at 7% 53%, hsla(2660,3%,8%,1) 0px, transparent 50%),
+radial-gradient(at 99% 100%, hsla(0,24%,58%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(2680,8%,37%,1) 0px, transparent 50%),
+radial-gradient(at 62% 5%, hsla(0,0%,0%,1) 0px, transparent 50%),
+radial-gradient(at 92% 6%, hsla(610,56%,45%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(0,0%,0%,1) 0px, transparent 50%),
+radial-gradient(at 71% 0%, hsla(0,2%,16%,1) 0px, transparent 50%);
+  background-size: cover; /* Ensures the background covers the entire area */
+  background-repeat:no-repeat; /* Prevents the background from repeating */
+  background-position: center;
+  background-attachment: fixed;
 
 }
 
@@ -55,6 +82,7 @@ h2{
   padding: 0;
   padding: 2rem;
   transition: margin-left 0.3s ease;
+  margin-bottom: 1%;
 }
 
 
@@ -67,11 +95,15 @@ h2{
 }
 
 #about{
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: 120px;
 }
 #about h2{
-  margin-right: 13%;
+  margin-left: -6%;
+
+}
+#about p{
+  margin-right: -5%;
 }
 #project{
   margin-top: 0px;
@@ -80,7 +112,7 @@ h2{
 section {
   padding: 2rem;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .project-list {
@@ -108,10 +140,18 @@ footer {
   width: 100%;
 }
 .intro{
-  text-align: center;
+  margin-left: 40%;
   margin-top: 5%;
   font-family: "Poppins" !important;
   font-weight: 500;
+
+}
+@media (max-width: 748px) {
+  .intro{
+    font-size: 1.5rem;
+    margin-left: 15%;
+    margin-top: 27%;
+  }
 
 }
 
@@ -132,5 +172,6 @@ footer {
   border-radius: 70px;
   background-color: var(--link-hover-color);
 }
+
 
 
