@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faTelegram, faGithub, faLinkedin, faXTwitter,faMedium,faDev } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faTelegram, faGithub, faLinkedin, faXTwitter,faMedium,faDev} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeCircleCheck } from '@fortawesome/free-solid-svg-icons/faEnvelopeCircleCheck';
 
 
@@ -39,6 +39,9 @@ const Contact = () => {
         </a>
       </div>
       <div>
+	  <p>Phone Number:<b> +251 955378626</b></p>
+
+	 
         <p>Do You Prefer Email Instead:</p>
         <div className="contact-icons">
         <a href="mailto:kirubelalemu119@gmail.com" target="_blank" rel="noopener noreferrer">
