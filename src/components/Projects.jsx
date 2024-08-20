@@ -2,6 +2,14 @@ import React from 'react';
 import './Projects.css';
 
 const projects = [
+	{
+    title: 'AirBnB Clone',
+    description: 'A full-stack web application that mimics the core functionality of AirBnB. Users can Search places and Book a place',
+    image: '/images/hbnb_logo.png',
+    tags: ['Flask', 'JQuery', 'Mysql', 'HTML5', 'CSS'],
+    link: 'https://github.com/kirubel-web/AirBnB_clone_v4'
+  },
+
   {
     title: 'Student Management System',
     description: 'Java App allows users to manage student information, including adding, updating, deleting, and searching student records. ',

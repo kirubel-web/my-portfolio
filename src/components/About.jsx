@@ -7,10 +7,16 @@ const About = () => {
       <section id="about">
         <div>
           <h2>About Me</h2>
+	  <div className="paragragh-aboutme">
           <p>
-            I am a web developer with a passion for learning new things. I enjoy creating web applications and learning new technologies.
+            I'm a passionate developer who loves turning complex problems into simple, elegant solutions. With a blend of creativity and technical skill, I craft digital experiences that are not only functional but also enjoyable to use. </p>
+<p>
+Whether I’m building a dynamic web application, designing an intuitive API, or optimizing a database, I’m all about finding the best tools and strategies to get the job done efficiently. I’m constantly learning, experimenting, and pushing the boundaries of what’s possible in tech.
+	</p>
+	  <p>
+When I’m not coding, you’ll find me exploring the latest in tech trends, tinkering with new tools, or diving deep into a challenging project. I believe in the power of technology to transform lives, and I’m here to make my mark.
 
-          </p>
+Let’s create something amazing together.          </p></div>
           <a href={"https://drive.google.com/file/d/1p4XM-SGEjh9XIDEzowgQ3R17ZtTJrdpE/view?usp=sharing"} target="_blank">
           <button class="continue-application">
     <div>
