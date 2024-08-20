@@ -1,7 +1,6 @@
 @import url(./static/App.css);
 
 html{
-  scroll-behavior: smooth;
   scrollbar-width: thin;
 
 }
