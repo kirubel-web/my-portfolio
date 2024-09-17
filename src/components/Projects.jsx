@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Projects.css';
+import { gsap } from 'gsap';
+  
 
 const projects = [
 	{
@@ -85,44 +87,51 @@ const projects = [
 
 ];
 
+
 const Projects = () => {
+  const projectListRef = useRef(null); // Ref to target the list of projects
+
+  useEffect(() => {
+    // GSAP animation to fade in each project item and stagger the appearance
+    gsap.fromTo(
+      projectListRef.current.children,
+      { opacity: 0, y: 50 }, // Initial state: invisible, moved down
+      { opacity: 1, y: 0, duration: 0.5, stagger: 0.2, ease: "power2.out" } // Animate to visible and move up
+    );
+  }, []);
+
   return (
     <div className="main-content">
-    <section id="projects">
+      <section id="projects">
+        <h2>My Projects</h2>
 
-
-      <h2 >My Projects</h2>
-
-
-      <div className="project-list">
-        {projects.map((project, index) => (
-          <div className="project-item" key={index}>
-            <img src={project.image} alt={project.title} className="project-image" />
-            <div className="project-content">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <div className="tags">
-                {project.tags.map((tag, index) => (
-                  <span className="tag" key={index}>{tag}</span>
-                ))}
+        <div className="project-list" ref={projectListRef}>
+          {projects.map((project, index) => (
+            <div className="project-item" key={index}>
+              <img src={project.image} alt={project.title} className="project-image" />
+              <div className="project-content">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <div className="tags">
+                  {project.tags.map((tag, idx) => (
+                    <span className="tag" key={idx}>{tag}</span>
+                  ))}
+                </div>
+                <div className='button-link'>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <button className='visitbtn'>
+                      Visit
+                      <div className="arrow-wrapper">
+                        <div className="arrow"></div>
+                      </div>
+                    </button>
+                  </a>
+                </div>
               </div>
-              <div className='button-link'>
-                <a href={project.link} target="_blank"> <button className='visitbtn'>
-                  Visit
-                  <div class="arrow-wrapper">
-                    <div class="arrow"></div>
-
-                  </div>
-                </button> </a>
-              </div>
-
             </div>
-          </div>
-
-        ))}
-      </div>
-
-    </section>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };
