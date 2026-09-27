@@ -1,65 +1,52 @@
-import React, { useEffect } from 'react';
-import './Contact.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTelegram, faGithub, faLinkedin, faXTwitter, faMedium, faDev } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelopeCircleCheck } from '@fortawesome/free-solid-svg-icons/faEnvelopeCircleCheck';
-import { gsap } from 'gsap';
+import { useEffect, useState } from 'react'
+import Icon from './Icon'
+import Socials from './Socials'
+import SectionHeading from './SectionHeading'
+import { profile } from '../data'
 
-const Contact = () => {
+export default function Contact() {
+  const [copied, setCopied] = useState(false)
 
   useEffect(() => {
-    // Target all the icons and create a staggered animation
-    gsap.fromTo(
-      ".contact-icons .icon",
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.5,
-        ease: "power1.out",
-        stagger: 0.2  // Delay each icon by 0.2 seconds
-      }
-    );
-  }, []);
+    if (!copied) return
+    const t = setTimeout(() => setCopied(false), 2000)
+    return () => clearTimeout(t)
+  }, [copied])
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(profile.email)
+      setCopied(true)
+    } catch {
+      window.location.href = `mailto:${profile.email}`
+    }
+  }
 
   return (
-    <div className="main-content">
-      <section id="contact">
-        <h2>Contact Me</h2>
+    <section id="contact" className="section container">
+      <SectionHeading index="03" label="Contact" title="Let's build something together." />
 
-        <div className="contact-icons">
-          <a href="https://t.me/code_japi" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTelegram} className="icon telegram" />
+      <div className="contact card" data-reveal>
+        <p className="contact__lead">
+          Have a project, a role, or just a question? My inbox is open and I&apos;ll get back to you.
+        </p>
+
+        <div className="contact__actions">
+          <a href={`mailto:${profile.email}`} className="btn btn--primary btn--lg">
+            <Icon name="mail" size={18} /> {profile.email}
           </a>
-          <a href="https://github.com/kirubel-web" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} className="icon github" />
-          </a>
-          <a href="https://www.linkedin.com/in/kirubel-alemu--" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} className="icon linkedin" />
-          </a>
-          <a href="https://x.com/code_japi" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faXTwitter} className="icon linkedin" />
-          </a>
-          <a href="https://code-japi.medium.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faMedium} className="icon medium" />
-          </a>
-          <a href="https://www.dev.to/code_japi" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faDev} className="icon linkedin" />
-          </a>
+          <button type="button" className="btn btn--ghost" onClick={copyEmail}>
+            <Icon name={copied ? 'check' : 'copy'} size={16} />
+            <span aria-live="polite">{copied ? 'Copied!' : 'Copy email'}</span>
+          </button>
         </div>
 
-        <div>
-          <p>Phone Number: <b>+251 968078877</b></p>
-          <p>Do You Prefer Email Instead:</p>
-          <div className="contact-icons">
-            <a href="mailto:kirubelalemu119@gmail.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faEnvelopeCircleCheck} className="icon email" />
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-};
+        <a href={`tel:${profile.phone.replace(/\s/g, '')}`} className="contact__phone link">
+          <Icon name="phone" size={16} /> {profile.phone}
+        </a>
 
-export default Contact;
+        <Socials className="socials--center" />
+      </div>
+    </section>
+  )
+}

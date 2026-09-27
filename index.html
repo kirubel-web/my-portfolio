@@ -2,13 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kirubel.A</title>
-	
+    <title>Kirubel Alemu — Software Developer</title>
+    <meta
+      name="description"
+      content="Kirubel Alemu is a software developer building web apps, APIs and data tools with Python, Django, React and more."
+    />
+    <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kirubel Alemu — Software Developer" />
+    <meta
+      property="og:description"
+      content="Web apps, APIs and data tools. See my projects and get in touch."
+    />
+    <meta property="og:image" content="/images/profile.webp" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+    />
+    <link rel="preload" as="image" href="/images/profile.webp" />
+
+    <!-- Apply the saved (or system) theme before first paint to avoid a flash. -->
+    <script>
+      (function () {
+        var t
+        try { t = localStorage.getItem('theme') } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+        }
+        document.documentElement.dataset.theme = t
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>This site needs JavaScript. You can reach me at kirubelalemu119@gmail.com.</noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

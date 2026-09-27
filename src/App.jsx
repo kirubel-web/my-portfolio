@@ -1,59 +1,39 @@
-import Loading from "./components/Loading";
-import './static/App.css';
-import React, {useEffect,useState} from 'react';
-
-
-import Home from './components/Home';
-import { ThemeProvider } from './ThemeContext';
-import Sidebar from './components/Sidebar';
+import { useEffect } from 'react'
+import Nav from './components/Nav'
+import Hero from './components/Hero'
 import About from './components/About'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import useReveal from './hooks/useReveal'
 
+const SECTIONS = ['home', 'about', 'projects', 'contact']
 
+export default function App() {
+  useReveal()
 
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-
-import { Route, Routes } from 'react-router-dom';
-
-
-
-
-function App() {
-  const [loading, setLoading] = useState(true)
-    useEffect(() => {
-        setTimeout(() => setLoading(false), 3300)
-    }, [])
-    if (loading) {
-        return <Loading/>
+  // The old site used routes like /about; send those visitors to the matching section.
+  useEffect(() => {
+    const id = window.location.pathname.replace(/^\/|\/$/g, '')
+    if (SECTIONS.includes(id)) {
+      window.history.replaceState(null, '', `/#${id}`)
+      document.getElementById(id)?.scrollIntoView()
     }
+  }, [])
 
   return (
-
-
-
-
-
-    <ThemeProvider>
-      <Sidebar />
-      <div className="App">
-
-
-
-
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/projects' element={<Projects />} />
-            <Route path='/contact' element={<Contact />} />
-          </Routes>
-
-        </div>
-
-
-    </ThemeProvider>
-
-
-  );
+    <>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
+      <Nav sections={SECTIONS} />
+      <main id="main">
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  )
 }
-
-export default App;
